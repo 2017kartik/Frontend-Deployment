@@ -204,12 +204,14 @@ const HowItWorks = () => {
                         <div className="group relative rounded-3xl border border-yellow-100 bg-white p-8 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                           {/* Background decoration */}
                           <div className="absolute -top-8 -left-8 h-24 w-24 rounded-full bg-yellow-50 opacity-50 transition-transform duration-500 group-hover:scale-110"></div>
-                          Icon
+
+                          {/* Icon */}
                           <div className="mb-6">
                             <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-yellow-50 transition-transform duration-300 group-hover:scale-110">
                               {step.icon}
                             </div>
                           </div>
+
                           {/* Content */}
                           <div className="mb-6">
                             <h3 className="mb-3 text-2xl leading-tight font-bold text-[#0B1E38]">
@@ -219,6 +221,7 @@ const HowItWorks = () => {
                               {step.subtitle}
                             </p>
                           </div>
+
                           {/* Details */}
                           <div className="mb-8 space-y-3">
                             {step.details.map((detail, detailIndex) => (
@@ -233,6 +236,7 @@ const HowItWorks = () => {
                               </div>
                             ))}
                           </div>
+
                           {/* Button */}
                           <button className="group/btn flex w-full cursor-pointer items-center justify-center space-x-2 rounded-2xl bg-[#0B1E38] px-8 py-4 font-medium text-white transition-all duration-300 hover:bg-[#0B1E38]/90 hover:shadow-lg">
                             <span>{step.buttonText}</span>

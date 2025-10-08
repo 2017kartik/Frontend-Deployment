@@ -9,7 +9,7 @@ import Testimonials from "../components/home/Testimonials";
 
 const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col bg-yellow-50">
+    <main className="flex flex-col bg-yellow-50 max-lg:overflow-x-hidden">
       <HeroSection />
       <HowItWorks />
       <ExpertsSection />
